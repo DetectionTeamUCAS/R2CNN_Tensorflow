@@ -131,7 +131,7 @@ def format_label(txt_list):
     format_data = []
     for i in txt_list[2:]:
         format_data.append(
-        [int(xy) for xy in i.split(' ')[:8]] + [class_list.index(i.split(' ')[8])]
+        [int(float(xy)) for xy in i.split(' ')[:8]] + [class_list.index(i.split(' ')[8])]
         # {'x0': int(i.split(' ')[0]),
         # 'x1': int(i.split(' ')[2]),
         # 'x2': int(i.split(' ')[4]),
